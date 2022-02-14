@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <title> CALCULADORA</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="zona-resultado">
+        <p id="previous" class="numero-anterior">
+        </p>
+        <p id="current" class="numero-actual">
+        </p>
+    </div>
+    <div id="zona-botones">
+        <table>
+            <tr>
+                <td>
+                    <button class="boton-naranja" onclick="borrarTodo()">
+                        <img src="https://dummyimage.com/96x96/ff7f00/fff.png&text=AC">
+                    </button>
+                </td>
+                <td>
+                    <button class="boton-naranja">
+                        <img src="https://dummyimage.com/96x96/ff7f00/fff.png&text=DEL">
+                    </button>
+                </td>
+                <td>
+                    <button class="boton-naranja">
+                        <img src="https://dummyimage.com/96x96/ff7f00/fff.png&text=%25">
+
+                    </button>
+                </td>
+                <td>
+                    <button class="boton-naranja" onclick="escribirOperacion('÷')">
+                        <img src="https://dummyimage.com/96x96/ff7f00/fff.png&text=÷">
+                    </button>
+
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="escribirNumero(7)">
+                        <img src="https://dummyimage.com/96x96/ffffff/000.png&text=7">
+
+                    </button>
+                </td>
+                <td>
+                    <button onclick="escribirNumero(8)">
+                        <img src="https://dummyimage.com/96x96/ffffff/000.png&text=8">
+                    </button>
+                </td>
+                <td>
+                    <button onclick="escribirNumero(9)">
+                        <img src="https://dummyimage.com/96x96/ffffff/000.png&text=9">
+                    </button>
+                </td>
+                <td>
+                    <button class="boton-naranja" onclick="escribirOperacion('x')">
+                        <img src="https://dummyimage.com/96x96/ff7f00/fff.png&text=×">
+                    </button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="escribirNumero(4)">
+                        <img src="https://dummyimage.com/96x96/ffffff/000.png&text=4">
+                    </button>
+                </td>
+                <td>
+                    <button onclick="escribirNumero(5)">
+                        <img src="https://dummyimage.com/96x96/ffffff/000.png&text=5">
+                    </button>
+                </td>
+                <td>
+                    <button onclick="escribirNumero(6)">
+                        <img src="https://dummyimage.com/96x96/ffffff/000.png&text=6">
+
+                    </button>
+                </td>
+                <td>
+                    <button class="boton-naranja" onclick="escribirOperacion('-')">
+                        <img src="https://dummyimage.com/96x96/ff7f00/fff.png&text=−">
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="escribirNumero(1)">
+                        <img src="https://dummyimage.com/96x96/ffffff/000.png&text=1">
+                    </button>
+                </td>
+                <td>
+                    <button onclick="escribirNumero(2)">
+                        <img src="https://dummyimage.com/96x96/ffffff/000.png&text=2">
+
+                    </button>
+                </td>
+                <td>
+                    <button onclick="escribirNumero(3)">
+                        <img src="https://dummyimage.com/96x96/ffffff/000.png&text=3">
+                    </button>
+                </td>
+                <td>
+                    <button class="boton-naranja" onclick="escribirOperacion('+')">
+                        <h1 style="color:white">
+                            +
+                        </h1>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="boton-naranja" onclick="escribirNumero('00')">
+                        <img src="https://dummyimage.com/96x96/ff7f00/fff.png&text=00">
+                    </button>
+                </td>
+                <td>
+                    <button onclick="escribirNumero('.')">
+                        <img src="https://dummyimage.com/96x96/ffffff/000.png&text=•">
+
+                    </button>
+                </td>
+                <td>
+                    <button onclick="escribirNumero(0)">
+                        <img src="https://dummyimage.com/96x96/ffffff/000.png&text= O">
+                    </button>
+                </td>
+                <td>
+                    <button class="boton-naranja" onclick="calcular()">
+                        <img src="https://dummyimage.com/96x96/ff7f00/fff.png&text==">
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
